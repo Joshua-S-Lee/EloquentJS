@@ -4,8 +4,8 @@ function pyramidMaker(height) {
         block += "#"
         console.log(block)
     };
-    for (let w = height ; w > 0; w--){
-        block = block.split("").splice(0,w).join("");
+    for (let width = height ; width > 0; width--){
+        block = block.split("").splice(0,width).join("");
         console.log(block)
     };
     
