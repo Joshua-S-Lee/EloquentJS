@@ -1,11 +1,8 @@
 function minimum(a,b){
-    if (a > b) {
-        return b;
-    } else if (a < b) {
-        return a;
-    } else if (a === b){
-        return "equivalent";
+    if (a === b) {
+        return "equivalent"
     };
+    return (a < b) ? a : b;
 };
 console.log(minimum(10,5));
 console.log(minimum(1,3));
