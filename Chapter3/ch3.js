@@ -7,4 +7,12 @@ const functionDefinition = function(parameter) /*This is a function expression *
 };
 functionDefinition("Argument");
 
-// on scope, 
+// on scope, if repeating variables the deepest variable will be used (lexical scope + repeated vars)
+
+//Declaration Notation
+function notationDemonstration() {
+    function internalFunction(){
+        console.log("hello from the other side.")
+    }
+    //note there is no need for closing semicolon;
+}
