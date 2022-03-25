@@ -8,9 +8,11 @@ const functionDefinition = function(parameter) /*This is a function expression *
 functionDefinition("Argument");
 
 // on scope, if repeating variables the deepest variable will be used (lexical scope + repeated vars)
-
-//Declaration Notation
+notationDemonstration();
+//Declaration Notation - shorter way to create a function binding,
+//additionally the declared function is created prior to the execution of the code so it is accessible before it is declared.
 function notationDemonstration() {
+    internalFunction();
     function internalFunction(){
         console.log("hello from the other side.")
     }
