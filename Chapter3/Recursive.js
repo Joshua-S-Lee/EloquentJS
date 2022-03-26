@@ -8,8 +8,10 @@ function isEven(num){
     } else if (num === 1){
         return false
     } else {
+        console.log(num)
         return isEven(num - 2);
     };
+    
 };
 
 console.log(isEven(50));
