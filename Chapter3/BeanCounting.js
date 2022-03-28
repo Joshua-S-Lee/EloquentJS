@@ -3,7 +3,14 @@
 // string chars can be accessed by "string"[0]
 
 function bCounter(word) {
-    return word[0]
+    let count = 0
+    for (let i = 0; i < word.length -1; i++)  {
+        if (word[i] === "B") {
+            count++
+        };
+
+    };
+    return count
 }
 
 console.log(bCounter("Billy better than Brett."))
